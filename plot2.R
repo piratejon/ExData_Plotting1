@@ -3,7 +3,7 @@
 
 ### line graph of global active power by time, with day-of-week axes
 
-require('load_data.R')
+source('load_data.R')
 data <- load_data()
 
 output_filename <- 'plot2.png'

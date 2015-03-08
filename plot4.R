@@ -3,7 +3,7 @@
 
 ### lattice plot of global active power by date, voltage by date, submetering by date and color, and global reactive power by date
 
-require('load_data.R')
+source('load_data.R')
 data <- load_data()
 
 #####plot(y=Global_active_power, x=Datetime, ylab="Global Active Power (kilowatts)", xlab="", type="l")

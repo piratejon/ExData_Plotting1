@@ -3,7 +3,7 @@
 
 ### submetering 1, 2, and 3 by date, in different colors
 
-require('load_data.R')
+source('load_data.R')
 data <- load_data()
 
 png("./plot3.png")
