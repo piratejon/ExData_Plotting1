@@ -3,8 +3,8 @@
 
 ### submetering 1, 2, and 3 by date, in different colors
 
-data <- read.csv('household_subset.txt', sep=';')
-data$Datetime <- strptime(sprintf("%s %s", data$Date, data$Time), format="%d/%m/%Y %H:%M:%S")
+require('load_data.R')
+data <- load_data()
 
 png("./plot3.png")
 plot(x=data$Datetime, y=data$Sub_metering_1, type="l", col="black", ylab="Energy sub metering", xlab="")

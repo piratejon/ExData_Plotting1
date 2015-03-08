@@ -3,9 +3,8 @@
 
 ### line graph of global active power by time, with day-of-week axes
 
-data <- read.csv('household_subset.txt', sep=';')
-
-data$Datetime <- strptime(sprintf("%s %s", data$Date, data$Time), format="%d/%m/%Y %H:%M:%S")
+require('load_data.R')
+data <- load_data()
 
 output_filename <- 'plot2.png'
 png(output_filename)

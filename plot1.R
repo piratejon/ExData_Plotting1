@@ -3,7 +3,8 @@
 
 ### generate a histogram of global active power (kilowatts)
 
-data <- read.csv('household_subset.txt', sep=';')
+source('load_data.R')
+data <- load_data()
 
 output_filename <- "plot1.png"
 png(output_filename)
